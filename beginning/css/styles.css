@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body, textarea {
     font-size: 16px;
     font-family: "Raleway", serif;
@@ -112,6 +115,22 @@ nav li > .sub-menu:hover  {
     margin-bottom: 30px;
     padding: 20px 0;
 }
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  #backToTopBtn:hover {
+    background-color: #fff;
+    color: #333;
+  }
 /**Home Page**/
 body.home {
     background-color: #efefef;
@@ -370,6 +389,7 @@ ul.paw-list li::before {
     background-color: #eee;
 }  
 .accordion-content {
+    display: none;
     max-height: 0;
     overflow: hidden;
     background-color: #fff;
